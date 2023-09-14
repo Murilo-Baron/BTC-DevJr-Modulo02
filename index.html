@@ -26,9 +26,7 @@
 
         .flex-container{
         display: flex;
-        background-color: #006a6a;
         justify-content: space-around;
-        padding: 40px;
         }
 
         .header-tittle{
@@ -44,6 +42,51 @@
             font-weight: 500;
             margin-bottom: 15px;
         }
+
+        .col-1{
+            background-color: #006a6a;
+            width: 50%;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        .col-2{
+            background-color: #006F6F;
+            width: 50%;
+            padding: 20px;
+            color: #FFF;
+        }
+
+        .subscription-tittle{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price{
+          font-size: 26px;
+          font-weight: 700px;
+        }
+
+        .month{
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
+        .button{
+           margin-top: 20px;
+           width: 100%;
+           padding: 15px 32px;
+           color: #006a6a;
+           background-color: #cccccc;
+           font-size: 16px
+        }
+
+        .button:hover{
+            background-color: #e9e9e9;
+        }
+
     </style>
 </head>     
 <body>
@@ -61,10 +104,23 @@
            </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="col-1">
+                <div class="subscription-tittle">
+                    Assinatura mensal:
+                </div>
+                
+                <div>
+                    <span class="price">R$ 99,99</span>
+                    <span class="month">por mês</span> 
+                </div>
+
+                <div>
+                    Cancele a qualquer momento.
+                </div>
+
+                <button class="button">Assine Agora</button>
             </div>
-            <div>
+            <div class="col-2">
                 Coluna 2
             </div>
         </div>
